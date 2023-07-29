@@ -1,0 +1,154 @@
+
+    .result-summary-wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        min-height: 500px;
+        max-width: 700px;
+        margin: 100px auto;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 5px 10px 30px #ebf1ff;
+
+        .overall-result{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 30px;
+            background: #2e2be9;
+            background-image: linear-gradient(	#7857ff, #2e2be9);
+
+            .header{
+                color: hsl(241, 100%, 89%);
+                font-size: 24px;
+                font-weight: 1000 !important;
+                margin: 35px 0;
+            }
+
+            .overall-score{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 50%;
+                width:220px;
+                height: 220px;
+                background-color: hsla(256, 72%, 46%, 1);
+                background-image: linear-gradient(#2e2be9, #7857ff);
+
+                .obtained-score{
+                    color: #fff;
+                    font-weight: 1000;
+                    font-size: 80px;
+                    margin-top: 40px;
+                }
+
+                .total-score{
+                    color: hsl(241, 100%, 89%);
+                    font-weight: 1000;
+                }
+            }
+
+            .comments-header{
+                color: #fff;
+                font-size: 26px;
+                font-weight: 1000 !important;
+                margin: 25px 0 0;
+            }
+
+            .comments-description{
+                text-align: center;
+                color: hsl(241, 100%, 89%);
+                font-weight: 1000 !important;
+                margin: 20px 70px;
+                font-size: 16px;
+            }
+        }
+
+        .result-summary{
+            padding: 25px;
+
+            .header{
+                font-size: 28px;
+                color: #303b5a;
+                font-weight: 1000 !important;
+                margin-bottom: 20px;
+            }
+
+            .summary-item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 14px 12px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+
+                .item-title{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: 18px;
+                    font-weight: 1000;
+
+                    &> img{
+                        width: 22px;
+                        height: 22px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .score{
+                    display: inline-block;
+                    font-weight: 1000;
+                }
+            }
+
+            .continue-cta{
+                outline: none;
+                color: #fff;
+                background: #303b5a;
+                font-size: 18px;
+                border-radius: 30px;
+                width: 100%;
+                padding: 15px 0;
+                margin-top: 30px;
+                cursor: pointer;
+
+                &:hover{
+                    font-size: 20px;
+                }
+            }
+
+            .reaction{
+                color: hsl(0, 100%, 67%);
+                background-color: #ffe9e9;
+            }
+            .memory{
+                color: #ffb01f;
+                background-color: #fff3d1;
+            }
+            .verbal{
+                color: #00bd91;
+                background-color: #dcfafa;
+            }
+            .visual{
+                color: #1125d4;
+                background-color: #f3f3fd;
+            }
+
+        }
+    }
+
+
+@media only screen and (max-width: 500px) {
+    .result-summary-wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+
+    .overall-result{
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+
+    }
+}
